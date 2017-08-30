@@ -58,5 +58,6 @@ typings/
 .env
 
 # va specified
-/dist
 
+/dist
+*.lock
