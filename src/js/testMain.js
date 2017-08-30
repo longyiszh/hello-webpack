@@ -1,4 +1,10 @@
+// css
 
+import "../css/lrtHP.css";
+import "../css/mapFO4.css";
+import "../css/mapWitcher3.css";
+
+// js
 import { gaoxiao } from "./testGaoxiao"
 
 const a4 = 2;
