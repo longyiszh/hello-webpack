@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8" name="viewport" content="initial-scale=1.0 width=device-width height = device-height user-scalable = no"  />
+<title>FO4 Map</title>
+<link rel="stylesheet" href="src/css/bootstrap.min.css">
+<link rel="stylesheet" href="src/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="src/css/mapFO4.css">
+<script src="src/js/jquery-2.2.0.min.js"></script>
+<script src="src/js/timer.jquery.min.js"></script>
+<script src="src/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	var screenY = $(window).height();
+
+	$(window).load(function(){
+		$("#divTimer").timer({
+			seconds: 3,
+			callback: hideTip(),
+			repeat: false
+		});
+	});
+
+	$(window).resize(function(){
+		screenY = $(window).height();
+		$("#mapHolder").css("height", screenY);
+	});
+
+	$(function(){
+		 $('#divTip1').toggle().animate({left:"70px"}, "slow");	
+		 $("#mapHolder").css("height", screenY);	 
+	});
+
+	function hideTip() {
+		$('#divTip1').animate({bottom:"-200px"}, "slow");
+	}
+
+
+</script>
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div id="mapHolder" class="col-md-12">
+				<iframe src="http://maps.wikia-services.com/api/v1/render/17121?uselang=en" frameborder="0"></iframe>			
+			</div>
+		</div>
+	</div>
+
+	<div id="divTip1" class="col-md-3">
+		<div id="divTpic">
+			<img class="img-responsive" src="src/Pic/map-VB.png" alt="VB">
+			<span>linruotian.com</span>
+		</div>
+		<div id="divTword">
+			<span>地图的加载时间可能较长，感谢您的耐心等待！</span>
+		</div>
+	</div>
+
+	<div id="divTimer"></div>
+
+</body></html>

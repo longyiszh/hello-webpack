@@ -1,0 +1,104 @@
+#mapHolder {
+	height: 489px;
+	padding: 0px 0px;
+}
+
+#mapHolder > iframe {
+	width:100%;
+	height:100%;
+}
+
+#divTip1 {
+	position: fixed;
+	left: -500px;
+	bottom: 140px;
+	display:none;
+}
+
+#divTpic {
+	position: relative;
+	top: 28px;
+}
+
+#divTpic > span {
+	color: white;
+	position: relative;
+	top: -30px;
+	right: -131px;
+	font-size: 16px;
+	font-family: monospace;
+	background-color: rgba(72, 124, 183, 0.6);
+}
+
+#divTword {
+	width: 258px;
+	height: 74px;
+	border: 1px solid rgba(164, 224, 180, 0.4);
+	background-color: rgba(52, 210, 93, 0.8);
+}
+
+#divTword > span {
+	position:relative;
+	top:10px;
+	left:19px;
+	color:white;
+	font-size:20px;
+}	
+
+#divTimer {
+	display:none;
+	position:absolute;
+	top:1px
+}
+
+/* Responsive Settings Start*/
+
+/* Extra small devices (phones, less than 768px) */
+@media only screen and (max-width: 768px) {	
+
+}
+
+/* Small devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+	#divTpic > span {
+		right: -131px;
+		font-size: 30px;
+	}
+
+	#divTword {
+		width: 449px;
+		height: 50px;
+	}
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+	#divTpic > span {
+		right: -131px;
+		font-size: 30px;
+	}
+
+	#divTword {
+		width: 449px;
+		height: 50px;
+	}
+}
+
+
+
+/* Large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	#divTpic > span {
+		right: -131px;
+		font-size: 30px;
+	}
+
+	#divTword {
+		width: 449px;
+		height: 50px;
+	}
+}
+
+/* Responsive Settings End*/
