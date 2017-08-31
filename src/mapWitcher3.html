@@ -4,37 +4,18 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8" name="viewport" content="initial-scale=1.0 width=device-width height = device-height user-scalable = no"  />
 <title>Witcher3 Map</title>
-<!-- <link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/bootstrap-theme.min.css"> -->
-<link rel="stylesheet" href="src/css/mapWitcher3.css">
-<script src="src/js/jquery-2.2.0.min.js"></script>
-<!-- <script src="js/timer.jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script> -->
+
 <script type="text/javascript">
 	let screenY = $(window).height();
-	//
-	// $(window).load(function(){
-	// 	$("#divTimer").timer({
-	// 		seconds: 3,
-	// 		callback: hideTip(),
-	// 		repeat: false
-	// 	});
-	// });
 
 	$(window).resize(function(){
 		screenY = $(window).height();
 		$("#mapHolder").css("height", screenY);
 	});
-	//
+
 	$(function(){
-		 //$('#divTip1').toggle().animate({left:"70px"}, "slow");
 		 $("#mapHolder").css("height", screenY);
 	});
-	//
-	// function hideTip() {
-	// 	$('#divTip1').animate({bottom:"-200px"}, "slow");
-	// }
-
 
 </script>
 </head>
@@ -47,16 +28,6 @@
 			</div>
 		</div>
 	</div>
-
-	<!-- <div id="divTip1" class="col-md-3">
-		<div id="divTpic">
-			<img class="img-responsive" src="Pic/map-VB.png" alt="VB">
-			<span>linruotian.com</span>
-		</div>
-		<div id="divTword">
-			<span>地图的加载时间可能较长，感谢您的耐心等待！</span>
-		</div>
-	</div> -->
 
 	<div id="divTimer"></div>
 

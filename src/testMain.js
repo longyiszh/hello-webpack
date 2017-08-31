@@ -10,6 +10,7 @@ import "./scss/main.scss";
 
 // js
 import * as bootstrap from 'bootstrap';
+import * as timer from './js/timer.jquery.min';
 
 import { gaoxiao, hahaha } from "./js/testGaoxiao";
 

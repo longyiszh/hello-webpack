@@ -101,14 +101,24 @@ module.exports = {
       //   // ...
       // }),
       extractPlugin,
-      new CleanWebpackPlugin(['dist']),
-      new HtmlWebpackPlugin({
-        template: "src/index.html"
-      }),
       new webpack.ProvidePlugin({
         $: 'jquery',
         jQuery: 'jquery',
         'window.jQuery': 'jquery'
-      })
+      }),
+      new CleanWebpackPlugin(['dist']),
+
+      new HtmlWebpackPlugin({
+        filename: 'index.html',
+        template: "src/index.html"
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'mapFO4.html',
+        template: "src/mapFO4.html"
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'mapWitcher3.html',
+        template: "src/mapWitcher3.html"
+      }),
     ]
 }
