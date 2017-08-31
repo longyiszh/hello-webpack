@@ -4,8 +4,11 @@ import "../css/lrtHP.css";
 import "../css/mapFO4.css";
 import "../css/mapWitcher3.css";
 
+// scss
+import "../scss/main.scss";
+
 // js
-import { gaoxiao } from "./testGaoxiao"
+import { gaoxiao, hahaha } from "./testGaoxiao";
 
 const a4 = 2;
 
@@ -14,3 +17,4 @@ const count = function () {
 }
 
 count();
+hahaha();
