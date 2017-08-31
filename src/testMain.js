@@ -11,8 +11,10 @@ import "./scss/main.scss";
 // js
 import * as bootstrap from 'bootstrap';
 import * as timer from './js/timer.jquery.min';
+import * as $ from "jquery";
 
 import { gaoxiao, hahaha } from "./js/testGaoxiao";
+import { dom, hideTip } from "./js/mapFO4";
 
 const a4 = 2;
 
@@ -22,3 +24,8 @@ const count = function () {
 
 count();
 hahaha();
+
+if (document.getElementsByTagName("title")[0].innerHTML === "FO4 Map" || "Witcher3 Map") {
+    dom();
+    hideTip();
+}

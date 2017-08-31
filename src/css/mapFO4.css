@@ -13,6 +13,7 @@
 	left: -500px;
 	bottom: 140px;
 	display:none;
+	z-index: 1000;
 }
 
 #divTpic {
@@ -48,7 +49,7 @@
 #divTimer {
 	display:none;
 	position:absolute;
-	top:1px
+	/* top:1px */
 }
 
 /* Responsive Settings Start*/

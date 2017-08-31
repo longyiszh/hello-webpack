@@ -5,33 +5,6 @@
 <meta charset="utf-8" name="viewport" content="initial-scale=1.0 width=device-width height = device-height user-scalable = no"  />
 <title>FO4 Map</title>
 
-<script type="text/javascript">
-	var screenY = $(window).height();
-
-	$(window).load(function(){
-		$("#divTimer").timer({
-			seconds: 3,
-			callback: hideTip(),
-			repeat: false
-		});
-	});
-
-	$(window).resize(function(){
-		screenY = $(window).height();
-		$("#mapHolder").css("height", screenY);
-	});
-
-	$(function(){
-		 $('#divTip1').toggle().animate({left:"70px"}, "slow");	
-		 $("#mapHolder").css("height", screenY);	 
-	});
-
-	function hideTip() {
-		$('#divTip1').animate({bottom:"-200px"}, "slow");
-	}
-
-
-</script>
 </head>
 
 <body>
