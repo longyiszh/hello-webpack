@@ -108,9 +108,13 @@ module.exports = {
       }),
       new CleanWebpackPlugin(['dist']),
 
+      // 管理多个html页。这里除了index.html，还有mapFO4.html和mapWitcher3.html
+      // 第一种方法：给每个html页都用一个HtmlWebpackPlugin
       new HtmlWebpackPlugin({
         filename: 'index.html',
         template: "src/index.html"
+        // chunks: [] // to tell what bundles to inject.
+        // name configured at entry point using a javascript object {}
       }),
       new HtmlWebpackPlugin({
         filename: 'mapFO4.html',
@@ -119,6 +123,10 @@ module.exports = {
       new HtmlWebpackPlugin({
         filename: 'mapWitcher3.html',
         template: "src/mapWitcher3.html"
-      }),
+      })
+      // 第二种方法： 除了index用HtmlWebpackPlugin管之外，其他都用file-loader管。
+      // 在上面的rules里面再加一个 /\.html$/ , 类似 (jpg|png) 那一条的写法
+      // 目录不写，默认是根
+      // 记得写 exclude: path.resolve(__dirname, 'src/index.html')
     ]
 }
